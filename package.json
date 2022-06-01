@@ -1,0 +1,23 @@
+{
+  "name": "interactive-comments-section",
+  "version": "1.0.0",
+  "description": "![Design preview for the Interactive comments section coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JocaNijeZmaj/interactive-comments-section.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JocaNijeZmaj/interactive-comments-section/issues"
+  },
+  "homepage": "https://github.com/JocaNijeZmaj/interactive-comments-section#readme",
+  "devDependencies": {
+    "sass": "^1.52.1"
+  }
+}
