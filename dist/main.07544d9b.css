@@ -1,5 +1,29 @@
-body {
-  background: blue;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+#container {
+  width: 90%;
+  margin: 3rem auto;
+}
+
+.comment_container {
+  position: relative;
+}
+
+.comment_container::before {
+  content: "";
+  background-color: hsl(211deg, 10%, 45%);
+  position: absolute;
+  min-height: 100%;
+  width: 1px;
+  left: -10px;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */
