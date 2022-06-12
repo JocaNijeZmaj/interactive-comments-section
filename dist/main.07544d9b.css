@@ -8,6 +8,10 @@
   font-family: "Rubik", sans-serif;
 }
 
+body {
+  background-color: hsl(223deg, 19%, 93%);
+}
+
 #container {
   width: 90%;
   margin: 3rem auto;
@@ -15,6 +19,10 @@
 
 .comment_container {
   position: relative;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 4rem auto;
 }
 
 .comment_container::before {
@@ -23,7 +31,64 @@
   position: absolute;
   min-height: 100%;
   width: 1px;
-  left: -10px;
+  left: -20px;
+}
+
+.comment_side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  background-color: hsl(223deg, 19%, 93%);
+  margin: 0.9rem;
+  border-radius: 8px;
+  font-weight: 800;
+  color: hsl(238deg, 40%, 52%);
+  gap: 8px;
+}
+
+.like:hover, .dislike:hover {
+  cursor: pointer;
+}
+
+.comment_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.comment_main .comment_text_area {
+  padding: 1rem;
+  color: hsl(211deg, 10%, 45%);
+}
+.comment_main .comment_header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+.comment_main .comment_header img {
+  width: 50px;
+  margin-top: 1rem;
+}
+.comment_main .comment_header .show_reply {
+  align-self: center;
+  margin-right: 2rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: hsl(238deg, 40%, 52%);
+}
+.comment_main .comment_header .comment_date {
+  color: hsl(211deg, 10%, 45%);
+}
+.comment_main .comment_header .comment_header1 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.comment_main .comment_header .comment_name {
+  font-weight: 600;
+  color: hsl(212deg, 24%, 26%);
+  margin-left: -1rem;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

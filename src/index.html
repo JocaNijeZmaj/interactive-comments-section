@@ -8,21 +8,29 @@
     <script src="/app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik&display=swap" rel="stylesheet">>
     <title>Frontend Mentor | Interactive comments section</title>
 </head> 
 <body>
     <div id="container">
         <div class="comment_container">
-            <div class="comment_header">
-                <span>amyrobson</span>
-                <span>1 munth ago</span>
-                <span class="show_reply">Reply</span>
+            <div class="comment_side">
+                <span class="like"> + </span>
+                <span class="count"> 5 </span>
+                <span class="dislike"> - </span>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit suscipit deserunt molestiae dolorem magni. Saepe officia quaerat beatae ullam expedita dolore rerum exercitationem, delectus sapiente voluptates, corrupti quam, vero voluptas!</p>
-            <div class="comment_footer">
-                <div>Like 123</div>
-                <div>Dislike</div>
+            <div class="comment_main">
+                <div class="comment_header">
+                    <div class="comment_header1">
+                        <img src="images/avatars/image-amyrobson.png">
+                        <span class="comment_name">amyrobson</span>
+                        <span class="comment_date">1 munth ago</span>
+                    </div>
+                    <span class="show_reply">Reply</span>
+                </div>
+                <div class="comment_text">
+                    <p class="comment_text_area">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit suscipit deserunt molestiae dolorem magni. Saepe officia quaerat beatae ullam expedita dolore rerum exercitationem, delectus sapiente voluptates, corrupti quam, vero voluptas!</p>
+                </div>
             </div>
         </div>
     </div>

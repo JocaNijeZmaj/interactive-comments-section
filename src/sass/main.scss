@@ -18,12 +18,20 @@ $font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Rubik', sans-serif;
 }
+body{
+    background-color: $Light-gray;
+}
 #container {
     width: min(90%, 1140);
     margin: 3rem auto;
+    
 }
 .comment_container {
     position: relative;
+    background-color: $White;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 4rem auto;
 }
 .comment_container::before {
     content: "";
@@ -31,5 +39,60 @@ $font-size: 16px;
     position: absolute;
     min-height: 100%;
     width: 1px;
-    left: -10px
+    left: -20px
+}
+.comment_side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    background-color: $Light-gray;
+    margin: 0.9rem;
+    border-radius: 8px;
+    font-weight: 800;
+    color: $blue;
+    gap: 8px;
+}
+.like:hover, .dislike:hover{
+    cursor: pointer;
+}
+.comment_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .comment_text_area {
+        padding: 1rem;
+        color: $Grayish-Blue;
+    }
+    .comment_header {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1rem;
+
+        img {
+            width: 50px;
+            margin-top: 1rem;
+        }
+        .show_reply {
+            align-self: center;
+            margin-right: 2rem;
+            font-weight: 800;
+            font-size: 1.1rem;
+            color: $blue;
+        }
+        .comment_date {
+            color: $Grayish-Blue;
+        }
+        .comment_header1 {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .comment_name {
+            font-weight: 600;
+            color: $Dark-blue;
+            margin-left: -1rem;
+        }
+    }
 }
