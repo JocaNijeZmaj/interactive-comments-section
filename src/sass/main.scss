@@ -138,9 +138,23 @@ body{
     padding: 2rem;
     display: flex;
     gap: 1rem;
+    border-radius: 1rem;
 }
 .input_area {
     width: 90%;
+    border-radius: 0.5rem;
+    border-style: groove;
+    border-color: $Light-gray;
+    padding: 1rem;
+    height: auto;
+}
+.send_btn {
+    color: $White;
+    background-color: $blue;
+    border: none;
+    border-radius: 1rem;
+    width: 5rem;
+    max-height: 3rem;
 }
 
 
@@ -178,5 +192,18 @@ body{
     }
     .comment_side.my_comment {
         justify-content: space-between;
+    }
+    #form_container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .label_avatar {
+        grid-row: 2;
+    }
+    .send_btn {
+        grid-row: 2;
+    }
+    .input_area {
+        grid-column: span 2;
     }
 }

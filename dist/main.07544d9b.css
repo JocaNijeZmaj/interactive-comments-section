@@ -139,10 +139,25 @@ body {
   padding: 2rem;
   display: flex;
   gap: 1rem;
+  border-radius: 1rem;
 }
 
 .input_area {
   width: 90%;
+  border-radius: 0.5rem;
+  border-style: groove;
+  border-color: hsl(223deg, 19%, 93%);
+  padding: 1rem;
+  height: auto;
+}
+
+.send_btn {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(238deg, 40%, 52%);
+  border: none;
+  border-radius: 1rem;
+  width: 5rem;
+  max-height: 3rem;
 }
 
 .show_reply.phone, .show_edit.phone, .show_delete.phone {
@@ -187,6 +202,23 @@ body {
 
   .comment_side.my_comment {
     justify-content: space-between;
+  }
+
+  #form_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .label_avatar {
+    grid-row: 2;
+  }
+
+  .send_btn {
+    grid-row: 2;
+  }
+
+  .input_area {
+    grid-column: span 2;
   }
 }
 
