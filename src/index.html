@@ -12,12 +12,13 @@
     <title>Frontend Mentor | Interactive comments section</title>
 </head> 
 <body>
-    <div id="container">
+    <div class="container">
         <div class="comment_container">
             <div class="comment_side">
                 <span class="like"> + </span>
                 <span class="count"> 5 </span>
                 <span class="dislike"> - </span>
+                <span class="show_reply phone">Reply</span>
             </div>
             <div class="comment_main">
                 <div class="comment_header">
@@ -29,10 +30,72 @@
                     <span class="show_reply">Reply</span>
                 </div>
                 <div class="comment_text">
-                    <p class="comment_text_area">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit suscipit deserunt molestiae dolorem magni. Saepe officia quaerat beatae ullam expedita dolore rerum exercitationem, delectus sapiente voluptates, corrupti quam, vero voluptas!</p>
+                    <p class="comment_text_area">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit suscipit deserunt molestiae dolorem magni. Saepe officia quaerat beatae ullam expedita dolore rerum exercitationem, delectus sapiente voluptates, corrupti quam, vero voluptas!ipsum dolor sit amet consectetur, adipd.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        <div class="comment_container">
+            <div class="comment_side">
+                <span class="like"> + </span>
+                <span class="count"> 1 </span>
+                <span class="dislike"> - </span>
+                <span class="show_reply phone">Reply</span>
+            </div>
+            <div class="comment_main">
+                <div class="comment_header">
+                    <div class="comment_header1">
+                        <img src="images/avatars/image-juliusomo.png">
+                        <span class="comment_name">Some Guy</span>
+                        <span class="comment_date">1 munth ago</span>
+                    </div>
+                    <span class="show_reply">Reply</span>
+                </div>
+                <div class="comment_text">
+                    <p class="comment_text_area">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit suscipit deserunt molestiae dolorem magni. Saepe officia quaerat beatae ullam expedita dolore rerum exercitationem</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="comment_container">
+            <div class="comment_side my_comment">
+                <div class="comment_bottom">
+                    <span class="like"> + </span>
+                    <span class="count"> 1 </span>
+                    <span class="dislike"> - </span>
+                </div>
+                <div class="comment_bottom">
+                    <span class="show_delete phone">Delete</span>
+                    <span class="show_edit phone">Edit</span>
+                </div>
+            </div>
+            <div class="comment_main">
+                <div class="comment_header">
+                    <div class="comment_header1">
+                        <img src="images/avatars/image-maxblagun.png">
+                        <span class="comment_name">Cool Guy</span>
+                        <span class="comment_you">YOU</span>
+                        <span class="comment_date">1 munth ago</span>
+                    </div>
+                    <div class="show_on_large">
+                    <span class="show_delete">Delete</span>
+                    <span class="show_edit">Edit</span>
+                    </div>
+                </div>
+                <div class="comment_text">
+                    <p class="comment_text_area">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit suscipit deserunt molestiae dolorem magni. Saepe officia quaerat beatae ullam expedita dolore rerum exercitationem</p>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    <form id="form_container">
+            <label for="input_area"><img src="images/avatars/image-maxblagun.png"></label>
+            <input class="input_area" type="text" placeholder="Add a comment...">
+            <button class="send_btn" type="submit">SEND</button>
+    </form>
+
 </body>
 </html>

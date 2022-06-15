@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"app.c328ef1a.js","sourceRoot":"..\\src","sourcesContent":[]}
+{"version":3,"sources":["app.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA","file":"app.c328ef1a.js","sourceRoot":"..\\src","sourcesContent":["///Funkcionalnost\r\n// 1: pravljenje komentara\r\n// 2 replay kao nested komentar\r\n// 3: brisanje komentara\r\n// treba da ima model na kome ce da pise are yous sure...\r\n// 4: editovanje komentara\r\n"]}

@@ -10,9 +10,11 @@
 
 body {
   background-color: hsl(223deg, 19%, 93%);
+  max-width: 1200px;
+  margin: auto;
 }
 
-#container {
+.container {
   width: 90%;
   margin: 3rem auto;
 }
@@ -46,9 +48,11 @@ body {
   font-weight: 800;
   color: hsl(238deg, 40%, 52%);
   gap: 8px;
+  max-height: 100px;
 }
 
-.like:hover, .dislike:hover {
+.like:hover, .dislike:hover, .show_edit:hover,
+.show_delete:hover, .show_reply:hover {
   cursor: pointer;
 }
 
@@ -89,6 +93,101 @@ body {
   font-weight: 600;
   color: hsl(212deg, 24%, 26%);
   margin-left: -1rem;
+}
+
+.like, .dislike {
+  color: hsl(211deg, 10%, 45%);
+}
+
+.comment_you {
+  background-color: hsl(238deg, 40%, 52%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 5px;
+  font-size: 0.6rem;
+  padding: 5px;
+}
+
+.comment_bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.show_on_large {
+  display: flex;
+}
+
+.show_delete {
+  color: hsl(358deg, 79%, 66%);
+  align-self: center;
+  margin-right: 1rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.show_edit {
+  align-self: center;
+  margin-right: 2rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: hsl(238deg, 40%, 52%);
+}
+
+#form_container {
+  width: 90%;
+  margin: 3rem auto;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.input_area {
+  width: 90%;
+}
+
+.show_reply.phone, .show_edit.phone, .show_delete.phone {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .comment_container {
+    grid-template-columns: 1fr;
+  }
+
+  .comment_side {
+    grid-row: 2;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .comment_bottom {
+    flex-direction: row;
+  }
+
+  .show_reply {
+    display: none;
+  }
+
+  .show_reply.phone, .show_edit.phone, .show_delete.phone {
+    display: block;
+  }
+
+  .show_reply.phone {
+    margin-left: 3rem;
+  }
+
+  .show_on_large {
+    display: none;
+  }
+
+  .comment_bottom {
+    margin-left: 2rem;
+    gap: 8px;
+  }
+
+  .comment_side.my_comment {
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

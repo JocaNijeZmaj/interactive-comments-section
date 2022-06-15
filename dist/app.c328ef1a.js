@@ -118,7 +118,12 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"app.js":[function(require,module,exports) {
-
+///Funkcionalnost
+// 1: pravljenje komentara
+// 2 replay kao nested komentar
+// 3: brisanje komentara
+// treba da ima model na kome ce da pise are yous sure...
+// 4: editovanje komentara
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -147,7 +152,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49283" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51620" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
